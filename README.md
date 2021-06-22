@@ -20,7 +20,7 @@ This is a solution to the [Huddle Landing Page challenge on Frontend Mentor](htt
 
 ## Overview
 
-- [Live Demo](https://calvin17.github.io/FM-single-price-grid-component/)
+- [Live Demo](https://calvin17.github.io/FM-huddle-landing-page/)
 
 ### The challenge
 
@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://calvin17.github.io/FM-single-price-grid-component/)
+- Live Site URL: [Add live site URL here](https://calvin17.github.io/FM-huddle-landing-page/)
 
 ## My process
 
