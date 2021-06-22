@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  background-image: url("../images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 100%;
+  background-color: #674baf; }
+
+.container {
+  padding: 5vh 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center; }
+
+.header {
+  align-self: flex-start; }
+  .header-logo {
+    width: 100%;
+    max-width: 20rem;
+    height: 4rem; }
+
+.banner {
+  padding: 6rem 2rem; }
+  .banner-img {
+    width: 100%;
+    max-width: 45rem; }
+
+.community-title {
+  font-size: 3.4rem;
+  margin-bottom: 0.8rem; }
+
+.community-sub-title {
+  font-size: 3.2rem; }
+
+.community-discription {
+  font-size: 2rem;
+  margin: 2.2rem 2rem 3.5rem 2rem; }
+
+.community .btn-rigister {
+  min-width: 24rem;
+  border-radius: 5rem;
+  padding: 1.5rem 0.5rem;
+  transition: all 0.5s;
+  border: 0px;
+  color: #674baf;
+  font-size: 1.6rem;
+  box-shadow: #26394d 0px 22px 23px -19px; }
+  .community .btn-rigister:hover, .community .btn-rigister:active {
+    background-color: #e882e8;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    color: #fff;
+    cursor: pointer; }
+
+.social-profile {
+  margin-top: 8rem; }
+  .social-profile .social-icon {
+    border: 1px solid currentColor;
+    height: 3.9rem;
+    width: 3.9rem;
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    transition: all 0.5s; }
+    .social-profile .social-icon:not(:last-child) {
+      margin-right: 1.8rem; }
+    .social-profile .social-icon:hover, .social-profile .social-icon:active {
+      color: #e882e8;
+      cursor: pointer; }
+
+/* DESKTOP */
+@media (min-width: 960px) {
+  body {
+    background-image: url("../images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+    background-color: #674baf;
+    min-height: 100%; }
+  .container {
+    padding: 5vh 3%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    grid-template-areas: "header ." "banner community" ". social-profile";
+    grid-column-gap: 3.2rem;
+    grid-row-gap: 1rem;
+    text-align: left; }
+  .header {
+    grid-area: header; }
+    .header-logo {
+      max-width: 22rem;
+      height: 5rem; }
+  .banner {
+    grid-area: banner; }
+    .banner-img {
+      min-width: 42rem;
+      max-width: 75rem; }
+  .community {
+    grid-area: community;
+    align-self: start;
+    margin-top: 10rem; }
+    .community-title {
+      font-size: 4.2rem;
+      margin-bottom: 0.2rem; }
+    .community-sub-title {
+      font-size: 4rem; }
+    .community-discription {
+      font-size: 1.8rem;
+      margin: 2.2rem 5.5rem 2.2rem 0rem; }
+    .community .btn-rigister {
+      min-width: 20rem;
+      border-radius: 5rem;
+      padding: 1.8rem 0.5rem; }
+  .social-profile {
+    grid-area: social-profile;
+    justify-self: end;
+    padding-right: 5.5rem; } }
+
+/* DESKTOP */
+@media (min-width: 1520px) {
+  .community-discription {
+    margin: 2.2rem 6rem 3.5rem 0rem; } }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 1rem; }
+
+.attribution a {
+  color: #fff; }
+  .attribution a:hover, .attribution a:active {
+    color: #e882e8;
+    cursor: pointer; }
