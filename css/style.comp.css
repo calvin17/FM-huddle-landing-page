@@ -89,7 +89,7 @@ body {
     background-image: url("../images/bg-desktop.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: cover;
+    background-position: left;
     background-color: #674baf;
     min-height: 100%; }
   .container {
@@ -130,7 +130,8 @@ body {
   .social-profile {
     grid-area: social-profile;
     justify-self: end;
-    padding-right: 5.5rem; } }
+    padding-right: 5.5rem;
+    margin-top: 0rem; } }
 
 /* DESKTOP */
 @media (min-width: 1520px) {
