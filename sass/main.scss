@@ -126,7 +126,7 @@ body {
   .container {
     padding: 5vh 3%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: "max-content 1fr";
     grid-template-rows: repeat(3, min-content);
     grid-template-areas:
       "header ."
@@ -147,8 +147,8 @@ body {
   .banner {
     grid-area: banner;
     &-img {
-      min-width: 42rem;
-      max-width: 75rem;
+      min-width: 44rem;
+      max-width: 84rem;
     }
   }
 
@@ -158,14 +158,16 @@ body {
     margin-top: 10rem;
     &-title {
       font-size: 4.2rem;
+      font-weight: 700;
       margin-bottom: 0.2rem;
     }
     &-sub-title {
       font-size: 4rem;
+      font-weight: 700;
     }
     &-discription {
       font-size: 1.8rem;
-      margin: 2.2rem 5.5rem 2.2rem 0rem;
+      margin: 2.2rem 4.5rem 2.2rem 0rem;
     }
     .btn-rigister {
       min-width: 20rem;
@@ -176,7 +178,7 @@ body {
   .social-profile {
     grid-area: social-profile;
     justify-self: end;
-    padding-right: 5.5rem;
+    padding-right: 4.5rem;
     margin-top: 0rem;
   }
 }

@@ -95,7 +95,7 @@ body {
   .container {
     padding: 5vh 3%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: "max-content 1fr";
     grid-template-rows: repeat(3, min-content);
     grid-template-areas: "header ." "banner community" ". social-profile";
     grid-column-gap: 3.2rem;
@@ -109,20 +109,22 @@ body {
   .banner {
     grid-area: banner; }
     .banner-img {
-      min-width: 42rem;
-      max-width: 75rem; }
+      min-width: 44rem;
+      max-width: 84rem; }
   .community {
     grid-area: community;
     align-self: start;
     margin-top: 10rem; }
     .community-title {
       font-size: 4.2rem;
+      font-weight: 700;
       margin-bottom: 0.2rem; }
     .community-sub-title {
-      font-size: 4rem; }
+      font-size: 4rem;
+      font-weight: 700; }
     .community-discription {
       font-size: 1.8rem;
-      margin: 2.2rem 5.5rem 2.2rem 0rem; }
+      margin: 2.2rem 4.5rem 2.2rem 0rem; }
     .community .btn-rigister {
       min-width: 20rem;
       border-radius: 5rem;
@@ -130,7 +132,7 @@ body {
   .social-profile {
     grid-area: social-profile;
     justify-self: end;
-    padding-right: 5.5rem;
+    padding-right: 4.5rem;
     margin-top: 0rem; } }
 
 /* DESKTOP */
